@@ -47,7 +47,7 @@ const Slider = () => {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {slides.map((slide) => (
-          <Slide slide={slide} />
+          <Slide slide={slide} key={slide.id} />
         ))}
       </div>
       <SliderPoints
