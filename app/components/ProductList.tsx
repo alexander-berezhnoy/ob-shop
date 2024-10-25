@@ -1,10 +1,8 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import ProductListItem, { TProductListItem } from "./ProductListItem";
 
 // temporary mock
-const productItems: TProductListItem = [
+const productItems: Array<TProductListItem> = [
   {
     name: "Product Name",
     price: 49,
