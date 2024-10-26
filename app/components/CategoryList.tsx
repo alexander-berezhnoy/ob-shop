@@ -44,8 +44,8 @@ const CategoryList = () => {
   return (
     <div className="mt-24 px4 overflow-x-scroll scrollbar-hidden">
       <div className="flex gap-4 md:gap-8">
-        {categoryItems.map((category) => (
-          <CategoryListItem category={category} />
+        {categoryItems.map((category, index) => (
+          <CategoryListItem key={index} category={category} />
         ))}
       </div>
     </div>
